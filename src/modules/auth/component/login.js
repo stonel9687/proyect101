@@ -9,24 +9,24 @@ function Login() {
             <div className='div-login'>
                 <h4>Iniciar Sesion</h4>
                 <form onSubmit>
-                    <div>
+                    <div className='input'>
                         <p> Usuario </p>
                         <input type='text' required></input>
                     </div>
-                    <div>
+                    <div className='input'>
                         <p> Contraseña </p>
                         <input type='password' required></input>
                     </div>
-                    <div>
+                    <div className='button-input'>
                         <button type='submit'>Ingresar</button>
                     </div>
-                    <div>
+                    <div className='button-input'>
                         <button type='submit'>Recuperar</button>
                     </div>
                 </form>
             </div >
             <div className='img-container'>
-            <p></p>
+            <img src=''/>
             </div>
         </div>
     )
