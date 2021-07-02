@@ -13,6 +13,21 @@ code {
 }
 
 .div-login {
-  width: 20vw;
-  height: 50vh;
+  width: 50vw;
+  height: 24vh;
+  background-color: red;
+  /* centrar vertical y horizontalmente */
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  margin: -25px 0 0 -25px; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+}
+
+.bt-margin{
+  margin-left: 100px;
+  margin-top: 14px;
+}
+
+.div-log {
+  
 }
