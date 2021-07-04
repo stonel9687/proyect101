@@ -1,34 +1,40 @@
 import { useState } from "react"
 import { useHistory, Link } from "react-router-dom"
 
+
 function Login() {
 
-
     return (
-        <div className='container'>
-            <div className='div-login'>
-                <h4>Iniciar Sesion</h4>
-                <form onSubmit>
-                    <div className='input'>
-                        <p> Usuario </p>
-                        <input type='text' required></input>
+        <section>
+            <div className='contenedor'>
+                <div className='contenedor_contenido'>
+                    <div className='contenedor_form'>
+                        <h2>Iniciar Sesion</h2>
+                        <form>
+                            <div className="input">
+                                <span>Usuario</span>
+                                <input type='text' className='user' required></input>
+                            </div>
+                            <div className="input">
+                                <span>Contraseña</span>
+                                <input type='password' className='password ' required></input>
+                            </div>
+                            <div className="input">
+                                <button type='submit'>
+                                    <p className='button_log'> Ingresar</p>
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                    <div className='input'>
-                        <p> Contraseña </p>
-                        <input type='password' required></input>
+                    <div className='img-container'>
+                        <img />
                     </div>
-                    <div className='button-input'>
-                        <button type='submit'>Ingresar</button>
+                    <div className='contenedor_error'>
+                        <p> Ups! parece que tus credenciales no concuerdadn</p>
                     </div>
-                    <div className='button-input'>
-                        <button type='submit'>Recuperar</button>
-                    </div>
-                </form>
-            </div >
-            <div className='img-container'>
-            <img src=''/>
+                </div>
             </div>
-        </div>
+        </section>
     )
 }
 
