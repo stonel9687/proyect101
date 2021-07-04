@@ -1,6 +1,7 @@
-const WarehouseAssistant=()=>{
-    return(
-        <p> Asistente de Bodega</p>
+const WarehouseAssistant = () => {
+    return (
+        <>
+        </>
     )
 }
 

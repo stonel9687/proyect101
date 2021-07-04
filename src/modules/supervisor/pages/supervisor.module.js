@@ -1,6 +1,12 @@
-const Supervisor=()=>{
-    return(
-        <p>Supervisor</p>
+import SideBar from "../../../shared/sidebar"
+import Navbar from "../../../shared/navbar"
+
+const Supervisor = () => {
+    return (
+        <>
+        <Navbar/>
+        <SideBar/>
+        </>
     )
 }
 
