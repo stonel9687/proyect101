@@ -16,7 +16,7 @@ section{
   width: 100vw;
   height: 100vh;
   padding: 60px;
-  background: linear-gradient(to right, #96DAFA 0%, #5b26b1 51%, #96DAFA 100%);
+  background: linear-gradient(to right, #10094d 0%, #22597e 51%, #10094d 100%);
 }
 
 .contenedor{
@@ -89,7 +89,7 @@ width: 55%;
   font-size: 1.6em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  border-bottom: 3px solid #941cc7;
+  border-bottom: 3px solid #14496d;
   display: inline-block;
 }
 
@@ -116,7 +116,7 @@ width: 55%;
   }
 
   .input button{
-    background: linear-gradient(to right, #96DAFA 0%, #5b26b1 51%, #96DAFA 100%);
+    background: linear-gradient(to right, #10094d 0%, #22597e 51%, #10094d 100%);
     border: none;
     font-weight: 500;
     cursor: pointer;

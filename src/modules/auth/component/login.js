@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useHistory, Link } from "react-router-dom"
+import almacen from '../../../assets/image/image_login/almacen.jpg'
 
 
 function Login() {
@@ -27,7 +28,7 @@ function Login() {
                         </form>
                     </div>
                     <div className='img-container'>
-                        <img />
+                        <img src={almacen} />
                     </div>
                     <div className='contenedor_error'>
                         <p> Ups! parece que tus credenciales no concuerdadn</p>
