@@ -28,17 +28,20 @@ body {
   height: 56px;
   margin: 0;
   padding: 0;
+  background: red;
 }
 
 .nav-box-1 {
-  width: 20%;
-  height: 60px;
-  padding: 0 15px;
-  background: #FFFFFF;
+  width: 100vw;
+  height: 90px;
+  padding: 0 60px;
+  background: #494949;
+  font-size: 30px;
+  z-index:-1;
 }
 
 .s-bar {
-  border-color: #DCDCDC;
+  color: blue;
 }
 
 .yt-img {
@@ -92,7 +95,15 @@ body {
 .aside {
   width: 15%;
   overflow: auto;
-  max-height: 682px;
+  height: 100vh;
+  background: #868686;
+  position: absolute;
+  z-index: 1;
+}
+
+.p-absolute{
+  position: relative;
+  margin: 0 auto;
 }
 
 

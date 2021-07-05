@@ -4,8 +4,10 @@ import Navbar from "../../../shared/navbar"
 const Supervisor = () => {
     return (
         <>
+        <div className='p-absolute'>
         <Navbar/>
         <SideBar/>
+        </div>
         </>
     )
 }
