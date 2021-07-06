@@ -10,7 +10,9 @@ function Login() {
             <div className='contenedor'>
                 <div className='contenedor_contenido'>
                     <div className='contenedor_form'>
-                        <h2>Iniciar Sesion</h2>
+                        <div>
+                            <h2 className='text-center'>Iniciar Sesion</h2>
+                        </div>
                         <form>
                             <div className="input">
                                 <span>Usuario</span>
@@ -20,9 +22,9 @@ function Login() {
                                 <span>Contraseña</span>
                                 <input type='password' className='password ' required></input>
                             </div>
-                            <div className="input">
-                                <button type='submit'>
-                                    <p className='button_log'> Ingresar</p>
+                            <div className='input'>
+                                <button type='submit' className='mt-5'>
+                                    <p className='button_log mb-0'> Ingresar</p>
                                 </button>
                             </div>
                         </form>

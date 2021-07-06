@@ -10,19 +10,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-button:focus{
-  border:none;
+button:focus {
+  border: none;
   outline: none;
 }
 
-section{
+section {
   width: 100vw;
   height: 100vh;
   padding: 60px;
   background: linear-gradient(to right, #10094d 0%, #22597e 51%, #10094d 100%);
 }
 
-.contenedor{
+.contenedor {
   background: #fff;
   width: 100%;
   height: 100%;
@@ -32,7 +32,7 @@ section{
   overflow: hidden;
 }
 
-.img-container{
+.img-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -40,17 +40,17 @@ section{
   margin-left: 20%;
 }
 
-.img-container img{
+.img-container img {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: red;
   object-fit: cover;
-} 
+}
 
-.contenedor_contenido{
+.contenedor_contenido {
   position: relative;
   display: flex;
   width: 90%;
@@ -58,10 +58,9 @@ section{
   justify-content: center;
   align-items: center;
   margin-left: 10%;
-  
 }
 
-.contenedor_error{
+.contenedor_error {
   position: absolute;
   bottom: -60px;
   left: 0;
@@ -78,15 +77,15 @@ section{
   box-shadow: 0 0 5px rgba(0, 0, 0, -7);
 }
 
-.mostrar-error{
+.mostrar-error {
   bottom: 0;
 }
 
-.contenedor_form{
-width: 55%;
+.contenedor_form {
+  width: 55%;
 }
 
-.contenedor_contenido h2{
+.contenedor_contenido h2 {
   color: #525252;
   font-weight: 500;
   font-size: 1.6em;
@@ -96,72 +95,74 @@ width: 55%;
   display: inline-block;
 }
 
-.input{
+.input {
   margin-bottom: 20px;
 }
-.input span{
+
+.input span {
   font-size: 1em;
   display: inline;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
-.input input, .input button{
+.input input, .input button {
   width: 100%;
   padding: 12px 20px;
   font-weight: 400;
-  border: 1px solid rgb(211,210,210);
+  border: 1px solid rgb(211, 210, 210);
   font-size: 1em;
   letter-spacing: 1px;
   color: #575f63;
   background: #f5f4f4;
   border-radius: 20px;
-  }
-
-  .input button{
-    background: linear-gradient(top to bottom, #10094d 0%, #22597e 51%, #10094d 100%);
-    border: none;
-    font-weight: 500;
-    cursor: pointer;
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-  }
-
-  @media screen and (max-width:768px) {
-    section{
-      padding: 10px;
-  }
-    .img-contenedor{
-      position: absolute;
-      width:100%;
-      top:0;
-      left: 0;
-      height: 100%;
-    }
-    .contenedor_contenido{
-      width: 100%;
-      height: 100%;
-      z-index: 3;
-    }
-    .contenedor_form{
-      width: 100%;
-      padding: 25px;
-      background: rgba(255,255, 255, -5);
-    }
 }
 
-.user{
+.input button{
+  background: linear-gradient(to right, #10094d 0%, #22597e 51%, #10094d 100%);
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  
+}
+
+@media screen and (max-width:768px) {
+  section {
+    padding: 10px;
+  }
+  .img-contenedor {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .contenedor_contenido {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+  .contenedor_form {
+    width: 100%;
+    padding: 25px;
+    background: rgba(255, 255, 255, -5);
+  }
+}
+
+.user {
   outline: none;
 }
 
-.password{
+.password {
   outline: none;
 }
 
-.button_log{
+.button_log {
   outline: none;
 }
 
@@ -173,10 +174,11 @@ width: 55%;
   position: absolute;
   top: 30%;
   left: 30%;
-  margin: -25px 0 0 -25px; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+  margin: -25px 0 0 -25px;
+  /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
 }
 
-.bt-margin{
+.bt-margin {
   margin-left: 100px;
   margin-top: 14px;
 }
