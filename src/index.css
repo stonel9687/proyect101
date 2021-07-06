@@ -1,23 +1,17 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.div-login {
-  width: 20vw;
-  height: 50vh;
-}
 /* Navbar*/
+
 .nav-section {
   height: 56px;
   margin: 0;
@@ -39,7 +33,7 @@ code {
   padding: 25px 60px;
 }
 
-.bg-success{
+.bg-success {
   background: blue;
   width: 85%;
   height: calc(100vh - 90px);
@@ -92,7 +86,6 @@ code {
   height: 60px;
 }
 
-
 /*--------------Menu aside-*/
 
 .aside {
@@ -102,11 +95,10 @@ code {
   background: #868686;
 }
 
-.p-absolute{
+.p-absolute {
   position: relative;
   margin: 0 auto;
 }
-
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -139,7 +131,6 @@ hr {
   margin: 5px 0 5px 0;
 }
 
-
 /*=========seccion Central====*/
 
 .central {
@@ -164,7 +155,6 @@ hr {
 .img-size {
   width: 100%;
 }
-
 
 /*----------------------------clases comunes-----------------------------*/
 
