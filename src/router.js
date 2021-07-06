@@ -13,7 +13,7 @@ const Router = () => {
                 <Route exact path='/'>
                     <Login />
                 </Route>
-                <Route exact path='/storekeeper'>
+                <Route path='/storekeeper'>
                     <StoreKeeper />
                 </Route>
                 <Route path='/appmanager/'>
