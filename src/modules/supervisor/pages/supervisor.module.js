@@ -1,6 +1,12 @@
-const Supervisor=()=>{
-    return(
-        <p>Supervisor</p>
+import DashBoard from "../../../shared/dashboard"
+
+const Supervisor = () => {
+    return (
+        <>
+            <DashBoard rol='supervisor'>
+                <p>ahora soy superdinamico</p>
+            </DashBoard>
+        </>
     )
 }
 
