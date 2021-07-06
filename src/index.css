@@ -1,18 +1,215 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.div-login {
-  width: 20vw;
-  height: 50vh;
+/* Navbar*/
+
+.nav-section {
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  background: red;
+}
+
+.nav-box-1 {
+  width: 85%;
+  height: 90px;
+  padding: 0 60px;
+  background: #494949;
+  font-size: 30px;
+}
+
+.s-bar {
+  color: blue;
+  font-size: 50px;
+  padding: 25px 60px;
+}
+
+.bg-success {
+  background: blue;
+  width: 85%;
+  height: calc(100vh - 90px);
+  bottom: 0;
+  right: 0;
+}
+
+.yt-img {
+  width: 100px;
+  height: 40px;
+  padding-left: 15px;
+}
+
+.yt-bars {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.nav-box-2 {
+  width: 100%;
+  height: 60px;
+  background: #FFFFFF;
+}
+
+.yt-scout {
+  font-size: 15px;
+  width: 60px;
+  height: 19px;
+  margin: 0;
+  padding: 1px 2px;
+  vertical-align: middle;
+  background-color: #DCDCDC;
+}
+
+.t-aling-center {
+  text-align: center;
+}
+
+.t-justify-center {
+  text-justify: center;
+}
+
+.input-nav {
+  width: 60%;
+  height: 25px;
+}
+
+.nav-box-3 {
+  width: 20%;
+  height: 60px;
+}
+
+/*--------------Menu aside-*/
+
+.aside {
+  width: 15%;
+  overflow: auto;
+  height: 100vh;
+  background: #868686;
+}
+
+.p-absolute {
+  position: relative;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.menuV {
+  width: 100%;
+}
+
+.menuV a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  display: block;
+}
+
+.menuV a:hover {
+  background-color: grey;
+}
+
+hr {
+  margin: 5px 0 5px 0;
+}
+
+/*=========seccion Central====*/
+
+.central {
+  width: 85%;
+  background: #F9F9F9;
+  justify-content: space-around;
+  padding-top: 25px;
+  overflow: scroll;
+  max-height: 682px;
+}
+
+.video-box {
+  width: 300px;
+  height: 275px;
+  margin-bottom: 20px;
+}
+
+.width-25 {
+  width: 25%;
+}
+
+.img-size {
+  width: 100%;
+}
+
+/*----------------------------clases comunes-----------------------------*/
+
+a {
+  color: #606060;
+}
+
+p {
+  font-size: 14px;
+}
+
+.fas {
+  color: #606060;
+}
+
+.red {
+  color: red;
+}
+
+.m-right-28 {
+  margin-right: 28px;
+}
+
+.p-aside {
+  padding: 0 24px;
+}
+
+.f-size-14 {
+  font-size: 14px;
+}
+
+.f-size-25 {
+  font-size: 25px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.aling-center {
+  align-items: center;
+}
+
+.j-content-center {
+  justify-content: center;
 }
