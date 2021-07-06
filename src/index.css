@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
 }
 
 code {
@@ -19,11 +20,6 @@ code {
 
 /* Navbar*/
 
-body {
-  padding-left: 15px;
-  overflow-y: hidden;
-}
-
 .nav-section {
   height: 56px;
   margin: 0;
@@ -32,16 +28,25 @@ body {
 }
 
 .nav-box-1 {
-  width: 100vw;
+  width: 85%;
   height: 90px;
   padding: 0 60px;
   background: #494949;
   font-size: 30px;
-  z-index:-1;
 }
 
 .s-bar {
   color: blue;
+  font-size: 50px;
+  padding: 25px 60px;
+}
+
+.bg-success{
+  background: blue;
+  width: 85%;
+  height: calc(100vh - 90px);
+  bottom: 0;
+  right: 0;
 }
 
 .yt-img {
@@ -97,8 +102,6 @@ body {
   overflow: auto;
   height: 100vh;
   background: #868686;
-  position: absolute;
-  z-index: 1;
 }
 
 .p-absolute{

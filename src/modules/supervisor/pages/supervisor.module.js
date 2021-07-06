@@ -1,13 +1,11 @@
-import SideBar from "../../../shared/sidebar"
-import Navbar from "../../../shared/navbar"
+import DashBoard from "../../../shared/dashboard"
 
 const Supervisor = () => {
     return (
         <>
-        <div className='p-absolute'>
-        <Navbar/>
-        <SideBar/>
-        </div>
+            <DashBoard rol='supervisor'>
+                <p>ahora soy superdinamico</p>
+            </DashBoard>
         </>
     )
 }
