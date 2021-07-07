@@ -185,13 +185,6 @@ section {
 
 /* Navbar*/
 
-.nav-section {
-  height: 56px;
-  margin: 0;
-  padding: 0;
-  background: red;
-}
-
 .nav-box-1 {
   width: 85%;
   height: 90px;
@@ -231,33 +224,7 @@ section {
   background: #FFFFFF;
 }
 
-.yt-scout {
-  font-size: 15px;
-  width: 60px;
-  height: 19px;
-  margin: 0;
-  padding: 1px 2px;
-  vertical-align: middle;
-  background-color: #DCDCDC;
-}
 
-.t-aling-center {
-  text-align: center;
-}
-
-.t-justify-center {
-  text-justify: center;
-}
-
-.input-nav {
-  width: 60%;
-  height: 25px;
-}
-
-.nav-box-3 {
-  width: 20%;
-  height: 60px;
-}
 
 /*--------------Menu aside-*/
 
@@ -266,11 +233,6 @@ section {
   overflow: auto;
   height: 100vh;
   background: #868686;
-}
-
-.p-absolute {
-  position: relative;
-  margin: 0 auto;
 }
 
 ::-webkit-scrollbar-track {
@@ -303,34 +265,7 @@ section {
 hr {
   margin: 5px 0 5px 0;
 }
-
-/*=========seccion Central====*/
-
-.central {
-  width: 85%;
-  background: #F9F9F9;
-  justify-content: space-around;
-  padding-top: 25px;
-  overflow: scroll;
-  max-height: 682px;
-}
-
-.video-box {
-  width: 300px;
-  height: 275px;
-  margin-bottom: 20px;
-}
-
-.width-25 {
-  width: 25%;
-}
-
-.img-size {
-  width: 100%;
-}
-
 /*----------------------------clases comunes-----------------------------*/
-
 a {
   color: #606060;
 }
@@ -385,4 +320,27 @@ p {
 
 .j-content-center {
   justify-content: center;
+}
+
+.div p:hover{
+  color: green;
+}
+
+.list-project{
+  background: white;
+  width: 100%;
+  height: 100%;
+  padding: 50px 50px;
+}
+
+.project-name{
+  width: 100%;
+  padding: 12px 20px;
+  font-weight: 400;
+  border: 1px solid rgb(211, 210, 210);
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: #575f63;
+  background: #f5f4f4;
+  border-radius: 20px;
 }
