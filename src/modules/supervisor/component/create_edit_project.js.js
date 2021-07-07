@@ -15,6 +15,7 @@ const CreateEditProject = () => {
                         <input></input>
                         <p>Detalles del Proyecto</p>
                         <input></input>
+                        <p> crear Proyecto</p>
                     </form>
                 </div>
             </div>
