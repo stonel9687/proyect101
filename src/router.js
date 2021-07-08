@@ -1,4 +1,4 @@
-import Login from "./modules/auth/component/login"
+import Login from "./modules/auth/login/login"
 import { Switch, Route} from "react-router-dom"
 import StoreKeeper from "./modules/store_keeper/pages/store_keeper.module"
 import AppManager from "./modules/app_manager/pages/app_manager.modules"
