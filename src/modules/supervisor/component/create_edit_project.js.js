@@ -1,30 +1,68 @@
 
 const CreateEditProject = () => {
     return (
-        <section className='d-flex container section-project'>
-            <div className='w-50 container'>
+        <div className='d-flex section-project'>
+            <div className='container'>
                 <div>
                     <div className='input-add container'>
-                        <div className=' container border border-secondary'>
-                            <div className='text-align-center'>
-                                <h4>Add New Contact</h4>
+                        <div className=' container '>
+                            <div className='text-align-center' >
+                                <h4 >Nuevo Proyecto</h4>
                             </div>
                             <form className="form-horizontal" onSubmit>
-                                <label for="inputPassword" className="col-lg-2 control-label">Nombre del Proyecto</label>
+                                <span for="inputPassword" className="col-lg-2 control-label">Nombre del Proyecto</span>
                                 <input required type="text" className="form-control " placeholder="Nombre" aria-label="Recipient's username" onChange value />
-                                <label for="inputPassword" className="col-lg-2 control-label">Nombre del Supervisor</label>
+                                <span for="inputPassword" className="col-lg-2 control-label">Nombre del Supervisor</span>
                                 <input required type="text" className="form-control " placeholder="Email" aria-label="Recipient's username" onChange value />
-                                <label for="inputPassword" className="col-lg-2 control-label">Equipo</label>
+                                <span for="inputPassword" className="col-lg-2 control-label">Equipo</span>
                                 <input required type="text" className="form-control " placeholder="Telefono" aria-label="Recipient's username" onChange value />
-                                <label for="inputPassword" className="col-lg-2 control-label">Detalle del Proyecto</label>
+                                <span for="inputPassword" className="col-lg-2 control-label">Detalle del Proyecto</span>
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
                                 </div>
                                 <div>
-                                    <p>Materiales a Utilizar</p>
-                                    
+                                    <span>Materiales a Utilizar</span>
+                                    <div className='d-flex justify-content-between'>
+                                        <div>
+                                            <input className='input-list-project1' />
+                                            <input className='input-list-project' />
+                                        </div>
+                                        <div>
+                                            <select>
+                                                <option value="20">20</option>
+                                                <option value="30">30</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <button>Check</button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ol class="list-group list-group-numbered">
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                    <div class="fw-bold">Subheading</div>
+                                                    Conector Recto 3/4
+                                                </div>
+                                                <span class="badge bg-primary rounded-pill">14</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                    <div class="fw-bold">Caja A011</div>
+                                                </div>
+                                                <span class="badge bg-primary rounded-pill">14</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                    <div class="fw-bold">Subheading</div>
+                                                    Copla EMT 3/4
+                                                </div>
+                                                <span class="badge bg-primary rounded-pill">14</span>
+                                            </li>
+                                        </ol>
+                                    </div>
                                 </div>
-                                <div className='m-top'>
+                                <div className='justify-content-center'>
                                     <button>Crear</button>
                                     <button>Cancelar</button>
                                 </div>
@@ -33,7 +71,7 @@ const CreateEditProject = () => {
                     </div>
                 </div>
             </div>
-        </section >
+        </div>
     )
 }
 
