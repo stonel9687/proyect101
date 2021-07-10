@@ -6,19 +6,23 @@ const CreateEditProject = () => {
                 <div>
                     <div className='input-add container'>
                         <div className=' container '>
-                            <div className='text-align-center' >
-                                <h4 >Nuevo Proyecto</h4>
+                            <div >
+                                <div className='d-flex justify-content-center'>
+                                    <h4 className='text-aling-center' >Nuevo Proyecto</h4>
+                                </div>
                             </div>
                             <form className="form-horizontal" onSubmit>
-                                <span for="inputPassword" className="col-lg-2 control-label">Nombre del Proyecto</span>
-                                <input required type="text" className="form-control " placeholder="Nombre" aria-label="Recipient's username" onChange value />
-                                <span for="inputPassword" className="col-lg-2 control-label">Nombre del Supervisor</span>
-                                <input required type="text" className="form-control " placeholder="Email" aria-label="Recipient's username" onChange value />
-                                <span for="inputPassword" className="col-lg-2 control-label">Equipo</span>
-                                <input required type="text" className="form-control " placeholder="Telefono" aria-label="Recipient's username" onChange value />
-                                <span for="inputPassword" className="col-lg-2 control-label">Detalle del Proyecto</span>
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
+                                <div> 
+                                    <span for="inputPassword" className="col-lg-2 control-label">Nombre del Proyecto</span>
+                                    <input required type="text" className="form-control " placeholder="Nombre" aria-label="Recipient's username" onChange value />
+                                    <span for="inputPassword" className="col-lg-2 control-label">Nombre del Supervisor</span>
+                                    <input required type="text" className="form-control " placeholder="Email" aria-label="Recipient's username" onChange value />
+                                    <span for="inputPassword" className="col-lg-2 control-label">Equipo</span>
+                                    <input required type="text" className="form-control " placeholder="Telefono" aria-label="Recipient's username" onChange value />
+                                    <span for="inputPassword" className="col-lg-2 control-label">Detalle del Proyecto</span>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
+                                    </div>
                                 </div>
                                 <div>
                                     <span>Materiales a Utilizar</span>
@@ -62,7 +66,7 @@ const CreateEditProject = () => {
                                         </ol>
                                     </div>
                                 </div>
-                                <div className='justify-content-center'>
+                                <div className='d-flex justify-content-center'>
                                     <button>Crear</button>
                                     <button>Cancelar</button>
                                 </div>
