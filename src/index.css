@@ -130,29 +130,6 @@ section {
   color: #fff;
 }
 
-@media screen and (max-width:768px) {
-  section {
-    padding: 10px;
-  }
-  .img-contenedor {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
-  .contenedor_contenido {
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-  }
-  .contenedor_form {
-    width: 100%;
-    padding: 25px;
-    background: rgba(255, 255, 255, -5);
-  }
-}
-
 .user {
   outline: none;
 }
@@ -198,7 +175,7 @@ section {
   padding: 25px 60px;
 }
 
-.bg-success {
+.dashboard-content {
   background: white;
   width: 85%;
   height: calc(100vh - 90px);
@@ -335,6 +312,7 @@ p {
 .project-name {
   width: 100%;
   padding: 12px 20px;
+  margin-top: 20px;
   font-weight: 400;
   border: 1px solid rgb(211, 210, 210);
   font-size: 1em;
@@ -349,7 +327,7 @@ p {
   width: 100%;
   height: calc(100vh - 90px);
   overflow-y: scroll;
-}
+  }
 
 .input-list-project1 {
   margin-right: 0;
@@ -373,7 +351,31 @@ p {
   outline: none;
 }
 
+.input-form-mat {
+  width: 700px;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  font-weight: 400;
+  border: 1px solid rgb(211, 210, 210);
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: #575f63;
+  background: #f5f4f4;
+  border-radius: 20px;
+  outline: none;
+}
+
 .bg-button-form{
   background-color: #555;
   color: #f1f1f1;
+}
+
+.bg-button-form-cancel{
+  background-color: #F5F4F4;
+  color: rgba(12, 12, 12, 0.596);
+}
+
+.icon-style{
+  font-size: 30px;
+  padding-left: 30px;
 }

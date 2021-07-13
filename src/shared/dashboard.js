@@ -1,4 +1,16 @@
+import { useHistory } from "react-router-dom"
+
 const DashBoard = ({ children, rol }) => {
+    const history = useHistory()
+
+    const handleClick = () => {
+        history.push('/supervisor/projectlist')
+    }
+
+    const handleClick2 = () => {
+        history.push('/supervisor/newproject')
+    }
+
     return (
         <>
             <div className='d-flex position-relative'>
@@ -26,8 +38,8 @@ const DashBoard = ({ children, rol }) => {
                     {rol === 'supervisor' &&
                         <div>
                             <p>Editar Perfil</p>
-                            <p>Crear/Editar Proyecto</p>
-                            <p>Lista de Proyectos</p>
+                            <button onClick={handleClick2}>Crear/Editar Proyecto</button>
+                            <button onClick={handleClick}>Lista de Proyectos</button>
                         </div>
                     }
                     {rol === 'warehouse-assistant' &&
@@ -36,14 +48,12 @@ const DashBoard = ({ children, rol }) => {
                             <p>Lista de Proyectos</p>
                         </div>
                     }
-                    <div>
-                        <p>L</p>
-                    </div>
+
                 </div>
                 <div className='nav-box-1 d-flex aling-center'>
                     <p>soy un navbar</p>
                 </div>
-                <div className='bg-success position-absolute'>
+                <div className='dashboard-content position-absolute'>
                     {children}
                 </div>
             </div>

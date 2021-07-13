@@ -1,5 +1,3 @@
-import { useState } from "react"
-import { useHistory, Link } from "react-router-dom"
 import almacen from '../../../assets/image/image_login/almacen.jpg'
 
 

@@ -1,16 +1,16 @@
-
 const CreateEditProject = () => {
     return (
         <div className='d-flex section-project'>
-            <div className='container'>
+            <div className='list-project'>
                 <div>
-                    <div className='input-add container'>
-                        <div className=' container '>
+                    <div className='input-add'>
+                        <div>
                             <div >
                                 <div className='d-flex justify-content-center'>
                                     <h4 className='text-aling-center' >Nuevo Proyecto</h4>
                                 </div>
                             </div>
+                            <hr/>
                             <form className="form-horizontal" onSubmit>
                                 <div>
                                     <span for="inputPassword" className="col-lg-2 control-label">Nombre del Proyecto</span>
@@ -28,7 +28,7 @@ const CreateEditProject = () => {
                                     <span>Materiales a Utilizar</span>
                                     <div className='d-flex justify-content-between'>
                                         <div>
-                                            <input className='input-list-project1 input-form' />
+                                            <input className='input-list-project1 input-form-mat' />
                                         </div>
                                         <div>
                                             <select className='input-form'>
@@ -65,9 +65,9 @@ const CreateEditProject = () => {
                                         </ol>
                                     </div>
                                 </div>
-                                <div className='d-flex justify-content-center mt-3'>
+                                <div className='d-flex justify-content-between mt-3'>
+                                    <button className='input-form bg-button-form-cancel'>Cancelar</button>
                                     <button className='input-form bg-button-form'>Crear</button>
-                                    <button className='input-form bg-button-form'>Cancelar</button>
                                 </div>
                             </form>
                         </div>
