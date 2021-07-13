@@ -1,4 +1,5 @@
 const DashBoard = ({ children, rol }) => {
+
     return (
         <>
             <div className='d-flex position-relative'>
@@ -26,8 +27,8 @@ const DashBoard = ({ children, rol }) => {
                     {rol === 'supervisor' &&
                         <div>
                             <p>Editar Perfil</p>
-                            <p>Crear/Editar Proyecto</p>
-                            <p>Lista de Proyectos</p>
+                            <div>Crear/Editar Proyecto</div>
+                            <div>Lista de Proyectos</div>
                         </div>
                     }
                     {rol === 'warehouse-assistant' &&
@@ -36,14 +37,12 @@ const DashBoard = ({ children, rol }) => {
                             <p>Lista de Proyectos</p>
                         </div>
                     }
-                    <div>
-                        <p>L</p>
-                    </div>
+
                 </div>
                 <div className='nav-box-1 d-flex aling-center'>
                     <p>soy un navbar</p>
                 </div>
-                <div className='bg-success position-absolute'>
+                <div className='dashboard-content position-absolute'>
                     {children}
                 </div>
             </div>
