@@ -1,15 +1,4 @@
-import { useHistory } from "react-router-dom"
-
 const DashBoard = ({ children, rol }) => {
-    const history = useHistory()
-
-    const handleClick = () => {
-        history.push('/supervisor/projectlist')
-    }
-
-    const handleClick2 = () => {
-        history.push('/supervisor/newproject')
-    }
 
     return (
         <>
@@ -38,8 +27,8 @@ const DashBoard = ({ children, rol }) => {
                     {rol === 'supervisor' &&
                         <div>
                             <p>Editar Perfil</p>
-                            <button onClick={handleClick2}>Crear/Editar Proyecto</button>
-                            <button onClick={handleClick}>Lista de Proyectos</button>
+                            <div>Crear/Editar Proyecto</div>
+                            <div>Lista de Proyectos</div>
                         </div>
                     }
                     {rol === 'warehouse-assistant' &&

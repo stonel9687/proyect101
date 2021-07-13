@@ -25,7 +25,7 @@ const ProjectList = () => {
                 </div>
                 <hr />
                 <div className="d-flex justify-content-between border-bottom project-name">
-                    <div className=''>
+                    <div className='d-flex align-items-center'>
                         <p>Proyecto 1</p>
                     </div>
                     <div className='d-flex'>
@@ -38,7 +38,7 @@ const ProjectList = () => {
                     </div>
                 </div>
                 <div className="d-flex justify-content-between project-name">
-                    <div className='text-center'>
+                    <div className='d-flex align-items-center'>
                         <p>Proyecto 2</p>
                     </div>
                     <div className='d-flex'>
@@ -51,7 +51,7 @@ const ProjectList = () => {
                     </div>
                 </div>
                 <div className="d-flex justify-content-between project-name">
-                    <div>
+                    <div className='d-flex align-items-center'>
                         <p>Proyecto 3</p>
                     </div>
                     <div className='d-flex'>

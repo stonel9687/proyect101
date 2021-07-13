@@ -13,7 +13,7 @@ const CreateEditProject = () => {
                             <hr/>
                             <form className="form-horizontal" onSubmit>
                                 <div>
-                                    <span for="inputPassword" className="col-lg-2 control-label">Nombre del Proyecto</span>
+                                    <span for="inputPassword" className="col-lg-2 control-label ">Nombre del Proyecto</span>
                                     <input required type="text" className="form-control input-form" placeholder="Nombre" aria-label="Recipient's username" onChange value />
                                     <span for="inputPassword" className="col-lg-2 control-label">Nombre del Supervisor</span>
                                     <input required type="text" className="form-control input-form " placeholder="Email" aria-label="Recipient's username" onChange value />
@@ -65,7 +65,7 @@ const CreateEditProject = () => {
                                         </ol>
                                     </div>
                                 </div>
-                                <div className='d-flex justify-content-between mt-3'>
+                                <div className='d-flex justify-content-end mt-3'>
                                     <button className='input-form bg-button-form-cancel'>Cancelar</button>
                                     <button className='input-form bg-button-form'>Crear</button>
                                 </div>
