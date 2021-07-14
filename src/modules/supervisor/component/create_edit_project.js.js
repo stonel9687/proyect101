@@ -128,6 +128,7 @@ const CreateEditProject = () => {
                     </div>
                 </div>
             </div>
+            <hr/>
             <div className='d-description'>
                 <div className='d-flex justify-content-center'>
                     <h4 className='text-aling-center' >Materiales</h4>
