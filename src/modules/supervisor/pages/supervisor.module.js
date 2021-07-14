@@ -1,10 +1,11 @@
 import DashBoard from "../../../shared/dashboard"
+import CreateEditProyect from "../component/create_edit_project.js"
 
 const Supervisor = () => {
     return (
         <>
             <DashBoard rol='supervisor'>
-                <p>ahora soy superdinamico</p>
+                <CreateEditProyect/>
             </DashBoard>
         </>
     )
