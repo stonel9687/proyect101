@@ -1,6 +1,7 @@
 import ProjectListAdmin from "../component/project_list"
 import DashBoard from "../../../shared/dashboard"
-import { Route, Switch, useHistory } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
+import ProjectDetails from "../component/project_details"
 
 const AppManager = () => {
     return (
@@ -9,6 +10,9 @@ const AppManager = () => {
             <Switch>
                 <Route path='/appmanager'>
                     <ProjectListAdmin />
+                </Route>
+                <Route path='/appmanager/projectdetails'>
+                    <ProjectDetails />
                 </Route>
             </Switch>
         </DashBoard>

@@ -1,4 +1,12 @@
+import { useHistory } from "react-router-dom"
+
 const ProjectListAdmin = () => {
+    const history = useHistory()
+
+    const handleClick=()=>{
+        history.push('/appmanager/projectdetails')
+    }
+
     return (
         <>
             <div className='list-project'>
@@ -14,7 +22,7 @@ const ProjectListAdmin = () => {
                 <hr />
                 <div className="d-flex justify-content-between border-bottom project-name">
                     <div className='d-flex align-items-center'>
-                        <p>Proyecto 1</p>
+                        <p onClick={handleClick}>Proyecto 1</p>
                     </div>
                 </div>
                 <div className="d-flex justify-content-between project-name">
