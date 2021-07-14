@@ -1,4 +1,12 @@
+import { useHistory } from "react-router-dom"
+
 const ProjectDetails = () => {
+const history=useHistory()
+
+const handleClick=()=>{
+    history.push('/appmanager/projectlist')
+}
+
     return (
         <div className='section-project'>
             <div className='d-flex justify-content-between section-create'>
@@ -99,7 +107,7 @@ const ProjectDetails = () => {
                     </div>
                 </div>
                 <div className='d-flex justify-content-end mt-3'>
-                    <button className='input-form bg-button-form-cancel'>Cancelar</button>
+                    <button className='input-form bg-button-form-cancel' onClick={handleClick}>Cancelar</button>
                     <button className='input-form bg-button-form'>Crear</button>
                 </div>
             </div>

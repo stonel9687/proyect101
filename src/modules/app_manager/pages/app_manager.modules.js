@@ -1,14 +1,19 @@
 import ProjectListAdmin from "../component/project_list"
 import DashBoard from "../../../shared/dashboard"
-import { Route, Switch } from "react-router-dom"
+import { Route, Switch, useHistory } from "react-router-dom"
 import ProjectDetails from "../component/project_details"
+import React, { useEffect } from 'react'
 
 const AppManager = () => {
-    return (
+    const history=useHistory()
+    useEffect(() => {
+       history.push('/appmanager/projectlist')
+    }, [])
+      return (
 
         <DashBoard rol='appmanager'>
             <Switch>
-                <Route path='/appmanager'>
+                <Route path='/appmanager/projectlist'>
                     <ProjectListAdmin />
                 </Route>
                 <Route path='/appmanager/projectdetails'>

@@ -6,14 +6,13 @@ body {
   overflow-y: hidden;
 }
 
-p{
-  margin:0;
+p {
+  margin: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
 
 .contenedor_contenido {
   position: relative;
@@ -292,7 +291,7 @@ p {
   width: 100%;
   height: calc(100vh - 90px);
   overflow-y: scroll;
-  }
+}
 
 .input-list-project1 {
   margin-right: 0;
@@ -330,20 +329,34 @@ p {
   outline: none;
 }
 
-.bg-button-form{
+.bg-button-form {
   background-color: #555;
   color: #f1f1f1;
   width: 180px;
 }
 
-.bg-button-form-cancel{
+.bg-button-form-cancel {
   background-color: #F5F4F4;
   color: rgba(12, 12, 12, 0.596);
   width: 180px;
   margin-right: 30px;
 }
 
-.icon-style{
+.icon-style {
   font-size: 30px;
   padding-left: 30px;
+}
+
+.d-info {
+  width: 50%;
+  padding: 30px;
+}
+
+.d-description {
+  height: 40%;
+  padding: 30px;
+}
+
+.section-create {
+  height: 60%;
 }
