@@ -10,21 +10,21 @@ const DashBoard = ({ children, rol }) => {
                             <p>App Manager</p>
                         </div>
                     }
-                       {rol === 'storekeeper' &&
+                    {rol === 'storekeeper' &&
                         <div>
                             <i class="fas fa-user s-bar"></i>
                             <p>Douglas reyes </p>
                             <p>Bodeguero</p>
                         </div>
                     }
-                       {rol === 'Supervisor' &&
+                    {rol === 'Supervisor' &&
                         <div>
                             <i class="fas fa-user s-bar"></i>
                             <p>Douglas reyes </p>
                             <p>Supervisor</p>
                         </div>
                     }
-                       {rol === 'warehouse-assistant' &&
+                    {rol === 'warehouse-assistant' &&
                         <div>
                             <i class="fas fa-user s-bar"></i>
                             <p>Douglas reyes </p>
