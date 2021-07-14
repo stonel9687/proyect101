@@ -3,11 +3,34 @@ const DashBoard = ({ children, rol }) => {
         <>
             <div className='d-flex position-relative'>
                 <div className="aside">
-                    <div>
-                        <i class="fas fa-user s-bar"></i>
-                        <p>Douglas reyes </p>
-                        <p>supervisor</p>
-                    </div>
+                    {rol === 'app-manager' &&
+                        <div>
+                            <i class="fas fa-user s-bar"></i>
+                            <p>Douglas reyes </p>
+                            <p>App Manager</p>
+                        </div>
+                    }
+                       {rol === 'storekeeper' &&
+                        <div>
+                            <i class="fas fa-user s-bar"></i>
+                            <p>Douglas reyes </p>
+                            <p>Bodeguero</p>
+                        </div>
+                    }
+                       {rol === 'Supervisor' &&
+                        <div>
+                            <i class="fas fa-user s-bar"></i>
+                            <p>Douglas reyes </p>
+                            <p>Supervisor</p>
+                        </div>
+                    }
+                       {rol === 'warehouse-assistant' &&
+                        <div>
+                            <i class="fas fa-user s-bar"></i>
+                            <p>Douglas reyes </p>
+                            <p>Asistente de Bodega</p>
+                        </div>
+                    }
                     {rol === 'app-manager' &&
                         <div>
                             <p>Editar Perfil</p>
