@@ -4,11 +4,34 @@ const DashBoard = ({ children, rol }) => {
         <>
             <div className='d-flex position-relative'>
                 <div className="aside">
-                    <div>
-                        <i class="fas fa-user s-bar"></i>
-                        <p>Douglas reyes </p>
-                        <p>supervisor</p>
-                    </div>
+                    {rol === 'appmanager' &&
+                        <div>
+                            <i class="fas fa-user s-bar"></i>
+                            <p>Douglas reyes </p>
+                            <p>App Manager</p>
+                        </div>
+                    }
+                    {rol === 'storekeeper' &&
+                        <div>
+                            <i class="fas fa-user s-bar"></i>
+                            <p>Douglas reyes </p>
+                            <p>Bodeguero</p>
+                        </div>
+                    }
+                    {rol === 'supervisor' &&
+                        <div>
+                            <i class="fas fa-user s-bar"></i>
+                            <p>Douglas reyes </p>
+                            <p>Supervisor</p>
+                        </div>
+                    }
+                    {rol === 'warehouseassitant' &&
+                        <div>
+                            <i class="fas fa-user s-bar"></i>
+                            <p>Douglas reyes </p>
+                            <p>Asistente de Bodega</p>
+                        </div>
+                    }
                     {rol === 'app-manager' &&
                         <div>
                             <p>Editar Perfil</p>
@@ -37,7 +60,14 @@ const DashBoard = ({ children, rol }) => {
                             <p>Lista de Proyectos</p>
                         </div>
                     }
-
+                    {rol === 'appmanager' &&
+                        <div>
+                            <p>Editar Perfil</p>
+                            <p>Crear Usuario</p>
+                            <p>Proyectos Activos</p>
+                            <p>Inventario Existente</p>
+                        </div>
+                    }
                 </div>
                 <div className='nav-box-1 d-flex aling-center'>
                     <p>soy un navbar</p>
