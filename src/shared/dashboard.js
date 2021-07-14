@@ -64,7 +64,6 @@ const DashBoard = ({ children, rol }) => {
                     </div>
                 </div>
                 <div className='nav-box-1 d-flex aling-center'>
-                    <p>soy un navbar</p>
                 </div>
                 <div className='bg-success position-absolute'>
                     {children}
