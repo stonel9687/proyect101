@@ -353,10 +353,27 @@ p {
 }
 
 .d-description {
-  height: 40%;
   padding: 30px;
 }
 
 .section-create {
-  height: 60%;
+  height: 430px;
+}
+
+.pd-15 {
+  margin-left: 15px;
+}
+
+.check-input {
+  margin-top: .3rem;
+  margin-right: 1.25rem;
+  margin-left: -1rem;
+}
+
+.mt-autho{
+  margin-top: 12px;
+}
+
+.div-team{
+  height: 122px;
 }
