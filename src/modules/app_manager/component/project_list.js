@@ -9,14 +9,10 @@ const ProjectListAdmin = () => {
 
     return (
         <>
-            <div className='list-project'>
+            <div className='list-project py-3'>
                 <div className='d-flex justify-content-between'>
                     <div>
                         <h4 className='text-center'>Proyectos Activos</h4>
-                    </div>
-                    <div className='d-flex'>
-                        <button className='input-form bg-button-form'>Nuevo Usuario</button>
-                        <button className='input-form bg-button-form'>Inventario</button>
                     </div>
                 </div>
                 <hr />
