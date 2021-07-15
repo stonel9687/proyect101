@@ -1,8 +1,8 @@
 import DashBoard from "../../../shared/dashboard"
 import ProjectList from "../component/project_list"
-import CreateEditProject from "../component/create_edit_project.js"
 import { Route, Switch, useHistory } from "react-router-dom"
 import React, { useEffect } from 'react'
+import ProjectDetails from "../../../shared/project_details"
 
 const Supervisor = () => {
     const history = useHistory()
@@ -18,7 +18,7 @@ const Supervisor = () => {
                         <ProjectList />
                     </Route>
                     <Route path='/supervisor/newproject'>
-                        <CreateEditProject />
+                        <ProjectDetails />
                     </Route>
                 </Switch>
             </DashBoard>

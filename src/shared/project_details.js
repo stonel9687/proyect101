@@ -21,12 +21,12 @@ const ProjectDetails = () => {
                     <form>
                         <div>
                             <span for="inputPassword" className="col-lg-2 control-label ">Nombre del Proyecto</span>
-                            <input required type="text" className="form-control input-form mt-2" placeholder="Nombre" aria-label="Recipient's username" onChange value disabled />
+                            <input required type="text" className="form-control input-form mt-2" placeholder="Nombre" aria-label="Recipient's username" onChange value  />
                             <span for="inputPassword" className="col-lg-2 control-label">Nombre del Supervisor</span>
-                            <input required type="text" className="form-control input-form mt-2" placeholder="Email" aria-label="Recipient's username" onChange value disabled />
+                            <input required type="text" className="form-control input-form mt-2" placeholder="Email" aria-label="Recipient's username" onChange value />
                             <span for="inputPassword" className="col-lg-2 control-label">Detalle del Proyecto</span>
                             <div className="form-floating">
-                                <textarea className="form-control input-form mt-2" rows='4' placeholder="Leave a comment here" id="floatingTextarea2" disabled></textarea>
+                                <textarea className="form-control input-form mt-2" rows='4' placeholder="Leave a comment here" id="floatingTextarea2" ></textarea>
                             </div>
                         </div>
                     </form>
@@ -38,32 +38,32 @@ const ProjectDetails = () => {
                     <hr />
                     <div>
                         <span for="inputPassword" className="col-lg-2 control-label">Equipo</span>
-                        <input required type="text" className="form-control input-form mt-2" placeholder="Telefono" aria-label="Recipient's username" onChange value disabled />
+                        <input required type="text" className="form-control input-form mt-2" placeholder="Telefono" aria-label="Recipient's username" onChange value />
                     </div>
                     <div>
                         <div className="input-form div-team overflow-auto py-1">
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value="" disabled />
+                                <input className="check-input" type="checkbox" value=""  />
                                 <span>eliud</span>
                             </div>
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value="" disabled />
+                                <input className="check-input" type="checkbox" value=""  />
                                 <span>jeshua</span>
                             </div>
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value="" disabled />
+                                <input className="check-input" type="checkbox" value=""  />
                                 <span>guille</span>
                             </div>
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value="" disabled />
+                                <input className="check-input" type="checkbox" value=""  />
                                 <span>Luis</span>
                             </div>
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value="" disabled />
+                                <input className="check-input" type="checkbox" value=""  />
                                 <span>cesar</span>
                             </div>
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value="" disabled />
+                                <input className="check-input" type="checkbox" value=""  />
                                 <span>douglas</span>
                             </div>
                         </div>
@@ -86,7 +86,7 @@ const ProjectDetails = () => {
                 <div className='pt-2'>
                     <div className='d-flex justify-content-between'>
                         <div>
-                            <input className='input-list-project1 input-form-mat' placeholder='Ingrese Materiales' disabled />
+                            <input className='input-list-project1 input-form-mat' placeholder='Ingrese Materiales' />
                         </div>
                         <div>
                             <select className='input-form'>
