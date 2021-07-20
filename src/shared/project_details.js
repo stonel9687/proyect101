@@ -1,8 +1,9 @@
 import { useHistory } from "react-router-dom"
 
-const ProjectDetails = () => {
+const ProjectDetails = (props) => {
     const history = useHistory()
 
+    const { projectName, projectDetails, supervisorName, team, handleDetails, handleProject, handleTeam, handleSupervisor } = props
     const handleClick = () => {
         history.push('/appmanager/projectlist')
     }
@@ -21,12 +22,12 @@ const ProjectDetails = () => {
                     <form>
                         <div>
                             <span for="inputPassword" className="col-lg-2 control-label ">Nombre del Proyecto</span>
-                            <input required type="text" className="form-control input-form mt-2" placeholder="Nombre" aria-label="Recipient's username" onChange value  />
+                            <input required type="text" className="form-control input-form mt-2" placeholder="Nombre de Proyecto" aria-label="Recipient's username" onChange={handleProject} value={projectName} />
                             <span for="inputPassword" className="col-lg-2 control-label">Nombre del Supervisor</span>
-                            <input required type="text" className="form-control input-form mt-2" placeholder="Email" aria-label="Recipient's username" onChange value />
+                            <input required type="text" className="form-control input-form mt-2" placeholder="Nombre de Supervisor" aria-label="Recipient's username" onChange={handleSupervisor} value={supervisorName} />
                             <span for="inputPassword" className="col-lg-2 control-label">Detalle del Proyecto</span>
                             <div className="form-floating">
-                                <textarea className="form-control input-form mt-2" rows='4' placeholder="Leave a comment here" id="floatingTextarea2" ></textarea>
+                                <textarea className="form-control input-form mt-2" rows='4' placeholder="Descripcion" id="floatingTextarea2" onChange={handleDetails} value={projectDetails} ></textarea>
                             </div>
                         </div>
                     </form>
@@ -38,32 +39,32 @@ const ProjectDetails = () => {
                     <hr />
                     <div>
                         <span for="inputPassword" className="col-lg-2 control-label">Equipo</span>
-                        <input required type="text" className="form-control input-form mt-2" placeholder="Telefono" aria-label="Recipient's username" onChange value />
+                        <input required type="text" className="form-control input-form mt-2" placeholder="Telefono" aria-label="Recipient's username" onChange={handleTeam} value={team} />
                     </div>
                     <div>
                         <div className="input-form div-team overflow-auto py-1">
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value=""  />
+                                <input className="check-input" type="checkbox" value="" />
                                 <span>eliud</span>
                             </div>
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value=""  />
+                                <input className="check-input" type="checkbox" value="" />
                                 <span>jeshua</span>
                             </div>
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value=""  />
+                                <input className="check-input" type="checkbox" value="" />
                                 <span>guille</span>
                             </div>
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value=""  />
+                                <input className="check-input" type="checkbox" value="" />
                                 <span>Luis</span>
                             </div>
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value=""  />
+                                <input className="check-input" type="checkbox" value="" />
                                 <span>cesar</span>
                             </div>
                             <div className='ml-3'>
-                                <input className="check-input" type="checkbox" value=""  />
+                                <input className="check-input" type="checkbox" value="" />
                                 <span>douglas</span>
                             </div>
                         </div>
@@ -123,6 +124,10 @@ const ProjectDetails = () => {
                         </ol>
                     </div>
                 </div>
+            </div>
+            <div className='d-flex justify-content-end mt-3'>
+                <button className='input-form bg-button-form-cancel'>Cancelar</button>
+                <button className='input-form bg-button-form'>Crear</button>
             </div>
         </div>
     )
