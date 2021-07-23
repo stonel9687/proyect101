@@ -3,13 +3,13 @@ import { useHistory } from "react-router-dom"
 const ProjectDetails = (props) => {
     const history = useHistory()
 
-    const { projectName, projectDetails, supervisorName, team, handleDetails, handleProject, handleTeam, handleSupervisor } = props
+    const { projectSubmit,projectName, projectDetails, supervisorName, team, handleDetails, handleProject, handleTeam, handleSupervisor } = props
     const handleClick = () => {
-        history.push('/appmanager/projectlist')
+        history.push('/supervisor/projectlist')
     }
 
     return (
-        <div className='section-project p-4'>
+        <form onSubmit={projectSubmit} className='section-project p-4'>
             <div className='icon-style d-inline'>
                 <i className="fas fa-chevron-left" onClick={handleClick}></i>
             </div>
@@ -19,7 +19,7 @@ const ProjectDetails = (props) => {
                         <h5 className='text-aling-center' >Nuevo Proyecto</h5>
                     </div>
                     <hr />
-                    <form>
+                    <div>
                         <div>
                             <span for="inputPassword" className="col-lg-2 control-label ">Nombre del Proyecto</span>
                             <input required type="text" className="form-control input-form mt-2" placeholder="Nombre de Proyecto" aria-label="Recipient's username" onChange={handleProject} value={projectName} />
@@ -30,7 +30,7 @@ const ProjectDetails = (props) => {
                                 <textarea className="form-control input-form mt-2" rows='4' placeholder="Descripcion" id="floatingTextarea2" onChange={handleDetails} value={projectDetails} ></textarea>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <div className='d-info'>
                     <div className='d-flex justify-content-center'>
@@ -96,7 +96,7 @@ const ProjectDetails = (props) => {
                             </select>
                         </div>
                         <div>
-                            <button className='input-form'>Check</button>
+                            <button type='button' className='input-form'>Check</button>
                         </div>
                     </div>
                     <div>
@@ -127,9 +127,9 @@ const ProjectDetails = (props) => {
             </div>
             <div className='d-flex justify-content-end mt-3'>
                 <button className='input-form bg-button-form-cancel'>Cancelar</button>
-                <button className='input-form bg-button-form'>Crear</button>
+                <button type='submit' className='input-form bg-button-form'>Crear</button>
             </div>
-        </div>
+        </form>
     )
 }
 

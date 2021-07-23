@@ -1,15 +1,10 @@
+import { useState } from "react"
 import { useHistory } from "react-router-dom"
 
-const ProjectList = () => {
+const ProjectList = (props) => {
     const history = useHistory()
 
-    const handleClick = () => {
-        history.push('/supervisor/newproject')
-    }
-
-    const handleClick2 = () => {
-        history.push('/supervisor/projectlist')
-    }
+    const { editProject, deleteProject, newProject, projectList } = props
 
     return (
         <>
@@ -19,47 +14,25 @@ const ProjectList = () => {
                         <h2 className='text-center'>Lista de Proyecto</h2>
                     </div>
                     <div className='d-flex'>
-                        <div><i className="fas fa-plus-circle icon-style" onClick={handleClick}></i></div>
-                        <div><i className="fas fa-sync icon-style" onClick={handleClick2}></i></div>
+                        <div><i className="fas fa-plus-circle icon-style" onClick={newProject}></i></div>
+                        <div><i className="fas fa-sync icon-style" ></i></div>
                     </div>
                 </div>
                 <hr />
                 <div className="d-flex justify-content-between border-bottom project-name">
-                    <div className='d-flex align-items-center'>
-                        <p>Proyecto 1</p>
-                    </div>
+                    {projectList.map((project) => {
+                        return (
+                            <div className='d-flex align-items-center'>
+                                <p>{project.projectName}</p>
+                            </div>
+                        )
+                    })}
                     <div className='d-flex'>
                         <div>
-                            <button type="button" className="btn " ><i class="fas fa-edit"></i></button>
+                            <button type="button" className="btn " ><i class="fas fa-edit" onClick={editProject}></i></button>
                         </div>
                         <div>
-                            <button type="button" className="btn " ><i class="fas fa-trash-alt"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div className="d-flex justify-content-between project-name">
-                    <div className='d-flex align-items-center'>
-                        <p>Proyecto 2</p>
-                    </div>
-                    <div className='d-flex'>
-                        <div>
-                            <button type="button" className="btn " ><i class="fas fa-edit"></i></button>
-                        </div>
-                        <div>
-                            <button type="button" className="btn " ><i class="fas fa-trash-alt"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div className="d-flex justify-content-between project-name">
-                    <div className='d-flex align-items-center'>
-                        <p>Proyecto 3</p>
-                    </div>
-                    <div className='d-flex'>
-                        <div>
-                            <button type="button" className="btn " ><i class="fas fa-edit"></i></button>
-                        </div>
-                        <div>
-                            <button type="button" className="btn " ><i class="fas fa-trash-alt"></i></button>
+                            <button type="button" className="btn " ><i class="fas fa-trash-alt" onClick={deleteProject}></i></button>
                         </div>
                     </div>
                 </div>
